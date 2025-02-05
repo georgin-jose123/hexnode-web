@@ -1,0 +1,31 @@
+<header>
+    <nav>
+        <div class="sidebar">
+            <div class="close-icon" (click)="hideSideBar()">
+                <a href="#" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        stroke-width="100px" fill="#5f6368">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a>
+            </div>
+            <hr>
+            <div class="button-login-link">
+                <a href="" class="free-trial">14 DAYS FREE TRIAL</a>
+                <div class="login">
+                    <a href="" class="">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="" class="logo">hexnode</a>
+            <a href="" class="free-trial hideOnSmallscreen">14 DAYS FREE TRAIl</a>
+            <a href="#" class="menu-button" (click)="showSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="35px"fill="#ffffff">
+                    <path d="M120-240v-100h720v120H120Zm0-200v-120h720v120H120Zm0-200v-120h720v120H120Z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+</header>
+<div *ngIf="overlay" class="over-lay"></div>

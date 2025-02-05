@@ -1,0 +1,87 @@
+<section class="section-a">
+
+    <div class="section-a-main-div" >
+            <div class ="section-a-contant-div sectionContentDivBecomeColumn">
+                   
+                    <div class="text" style="max-width: 550px;">
+                            <div class="text-near-img" >
+                                    <h1>
+                                    Turn your devices into kiosks in a few minutes with Hexnode UEM
+                                    </h1>
+                            </div>
+                                <div class="button-form-div">
+                                    <div class="input-div">
+                                        <input
+                                        pInputText
+                                        type="text"
+                                        class="p-inputtext"
+                                        placeholder="Your Work Email"
+                                        [formControl]="emailFormControl"
+                                        ng-pattern ="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />        
+                                    </div>
+                                    <div class="button-div">
+                                        <button (click)="buttonClick()">Get Started Now!</button>       
+                                    </div>    
+                                </div>
+                                <div class="validation-div" *ngIf="emailFormControl.invalid && emailFormControl.touched">
+                                    <div *ngIf="emailFormControl.hasError('email')">
+                                        <p style="color:aliceblue">
+                                            Please enter valid email!
+                                        </p>
+                                    </div>
+                                    <div  *ngIf="emailFormControl.hasError('required')">
+                                        <p style="color:aliceblue">
+                                            Email is required
+                                        </p>
+                                    </div>
+                                </div>
+                    </div>
+                    <div clas="img" style="max-width: 100%;">
+                        <img style="
+                        max-height: 100%;
+                        max-width: 100%;" src="assets/images/hexnode-section-a.webp">
+                    </div>
+            </div>
+    </div>
+</section>
+<div class="main-images-div">
+    <div>
+        <div class="content-div">
+          <a  href="">
+            <div class="images-div">
+            <img src ="assets/images/idc-img.webp">
+            </div>
+            <div class="text-content">
+                <p>
+                    Hexnode is listed as a leader and a major player in IDC MarketScape UEM Vendors Assessment Reports 2024.
+                </p>
+                
+            </div>
+        </a>
+        <hr  class="line">
+        <a href="">
+            <div class="images-div">
+                <img src ="assets/images/gartner-img.webp">
+            </div>
+            <div  class="text-content">
+                <p>
+                    Hexnode was recognized in the 2023 Gartner® Market Guide for Unified Endpoint Management Tools.
+                </p>
+               
+            </div>
+        </a>
+        <hr class="line">
+        <a href="">
+            <div class="images-div">
+                <img src ="assets/images/forrester-img.webp" style="height: 30px">
+            </div>
+            <div  class="text-content">
+                <p>
+                    Forrester includes Hexnode as a Notable vendor in The Unified Endpoint Management Landscape, Q3 2023.
+                </p>
+            </div>
+        </a>
+        </div>
+
+    </div>
+</div>

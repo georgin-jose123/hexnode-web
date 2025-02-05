@@ -1,0 +1,119 @@
+.section-c{
+    padding-bottom: 100px;
+
+}
+.main-div{
+    max-width: 1300px;
+    margin: auto;
+    width: 90%;
+}
+.main-div h1{
+    font-size: 38px;
+    text-align: center;
+    line-height: 50px;
+    margin: auto;
+    max-width: 900px;
+
+}
+.sub-main-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.content-div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 25px
+
+}
+.img-div{
+    margin-right: 30px;
+    max-width: 520px;
+    position: relative;
+
+}
+.img-div img{
+    border-radius: 20px;
+    width: 100%;
+}
+.hi{
+  
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 50px;
+
+}
+.content-of-img-div{
+    max-width: 750px;
+    cursor: pointer;
+}
+.content-of-img-div h2{
+     font-size: 30px;
+}
+.content{
+    padding-top: 30px;
+}
+.content p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.small-contanier{
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    min-height: 50px;
+    background-color:rgb(241 241 241 / 90%);
+    border-radius: 10px;
+    bottom: 100px;
+    right: -15px;
+}
+.img-div:hover .small-contanier{
+    transform: translateY(-5px);
+            transition: transform .8s ease;
+}
+.small-contanier p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.content-div .content-of-img-div .content{
+    display: none;
+}
+.content-div .img-div{
+    display: none;
+}
+.content-div.active .img-div{
+    display: block;
+}
+.content-div.active .content-of-img-div .content{
+    display: block;
+}
+.content a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: #e70f0f;
+    font-size: 17px;
+    font-weight: 500;
+}
+@media (max-width:990px){
+.content-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    justify-content: center;
+}
+}

@@ -1,0 +1,31 @@
+<section class="section-g" style="min-height:300px;background-color: black;">
+    <div class="main-div">
+        <div class="text-div">
+            <h1>Sign up and try Hexnode free for 14 days!</h1>
+        </div>
+        <div class="full-div">
+            <div class="button-form-div">
+                <div class="input-div">
+                    <input pInputText type="text" class="p-inputtext" placeholder="Your Work Email"
+                        [formControl]="emailFormControl"
+                        ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />
+                </div>
+                <div class="button-div">
+                    <button (click)="buttonClick()">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <div class="validation-div" *ngIf="emailFormControl.invalid && emailFormControl.touched">
+            <div *ngIf="emailFormControl.hasError('email')">
+                <p style="color:aliceblue">
+                    Please enter valid email!
+                </p>
+            </div>
+            <div *ngIf="emailFormControl.hasError('required')">
+                <p style="color:aliceblue">
+                    Email is required
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

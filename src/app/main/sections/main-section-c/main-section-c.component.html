@@ -1,0 +1,150 @@
+<section class="section-c">
+    <div class="main-div">
+        <h1>
+            What additional possibilities does the Kiosk mode offer?
+        </h1>
+        <div class="sub-main-div">
+
+            <div class="content-div active">
+                <div *ngIf="contentDiv ==='contentDiv1'" class="img-div">
+                    <img src="assets/images/effortless-kiosk-deployement-image.webp">
+                </div>
+                <div  *ngIf="contentDiv ==='contentDiv2'" class="img-div">
+                    <img src="assets/images/customized-interface-image.webp">
+                    <div class=" small-contanier">
+                        <p>
+                            <span>
+                                <img src="assets/images/ads-tick-green.svg">
+                            </span>
+                            <span>
+                                Brand Visibility
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div  *ngIf="contentDiv ==='contentDiv3'" class="img-div">
+                    <img src="assets/images/power-up-protection-image.webp">
+                    <div class=" small-contanier">
+                        <p>
+                            <span>
+                                <img src="assets/images/ads-tick-green.svg">
+                            </span>
+                            <span>
+                                Data security
+                            </span>
+                        </p>
+                    </div>
+              </div>
+                <div *ngIf="contentDiv ==='contentDiv4'" class="img-div">
+                    <img src="assets/images/secure-app-ecosystem.webp">
+                    <div class=" small-contanier">
+                        <p>
+                            <span>
+                                <img src="assets/images/ads-tick-green.svg">
+                            </span>
+                            <span>
+                              App management
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div *ngIf="contentDiv ==='contentDiv5'"  class="img-div">
+                    <img src="assets/images/easy-to-use-interface-image.webp">
+                    <div class=" small-contanier">
+                        <p>
+                            <span>
+                                <img src="assets/images/ads-tick-green.svg">
+                            </span>
+                            <span>Easy to use interface
+                            </span>
+                        </p>
+                    </div>
+                </div>
+<div class="hi">
+
+    <div class="content-of-img-div">
+        <h2 (click) = "contentDiv ='contentDiv1'">
+            Effortless kiosk deployment & management
+        </h2>
+        <div *ngIf="contentDiv ==='contentDiv1'" class="content">
+            <p>
+                Deploy kiosk-enabled devices straight out of the box. Flash a custom Android Enterprise,
+                Samsung Knox or ROM with Hexnode App on the devices by collaborating with OEM vendors who
+                provide
+                specially configured ROMs.
+            </p>
+            <a href="">TRY FOR FREE ></a>
+        </div>
+    </div>
+
+    <div class="content-of-img-div">
+        <h2 (click)="contentDiv ='contentDiv2'">
+            Customized interface for brand visibility
+        </h2>
+        <div *ngIf="contentDiv ==='contentDiv2'" class="content">
+            <p>
+                Create a locked-down environment with customized interface.
+                Maximize brand visibility and leave a lasting impression by showcasing products,
+                services and key messages directly to users through the customized interface.
+
+            </p>
+            <a href="">TRY FOR FREE ></a>
+        </div>
+    </div>
+
+    <div class="content-of-img-div">
+        <h2 (click)="contentDiv ='contentDiv3'">
+            What more can you do with Hexnode kiosk?
+        </h2>
+        <div *ngIf="contentDiv ==='contentDiv3'" class="content">
+            <p>
+                Ensure compliance of your devices by remotely deploying the latest OS version while
+                the device is still in kiosk mode. Prevent your data from falling into
+                the wrong hands even in case of device loss/theft with the various remote management
+                features.
+
+            </p>
+            <a href="">TRY FOR FREE ></a>
+        </div>
+    </div>
+
+
+    <div class="content-of-img-div">
+        <h2 (click)="contentDiv ='contentDiv4'">
+            Secure and update your app ecosystem
+        </h2>
+        <div *ngIf="contentDiv ==='contentDiv4'"class="content">
+            <p>
+                Streamline the deployment and management on apps on your kiosk devices.
+                Save your time and effort, ensure security and improve your efficiency using Hexnode’s
+                silent app
+                installation and update features.
+
+            </p>
+            <a href="">TRY FOR FREE ></a>
+        </div>
+    </div>
+
+    <div class="content-of-img-div">
+        <h2 (click)="contentDiv ='contentDiv5'">
+            Provide an easy-to-use interface for end-users
+        </h2>
+        <div *ngIf="contentDiv ==='contentDiv5'" class="content">
+            <p>
+                Give your end-users the power to control their devices without overwhelming them with
+                options.
+                An intuitive interface to let them access only the essential settings they need.
+                Make it easy for them to unlock the full potential of your devices hassle-free.
+
+            </p>
+            <a href="">TRY FOR FREE ></a>
+        </div>
+    </div>
+</div>
+                  
+        </div>
+    </div>
+    </div>
+</section>

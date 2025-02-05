@@ -1,0 +1,149 @@
+header {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    transition: background-color 0.4s ease;
+    position: fixed; 
+    top:0;z-index: 2000;
+
+}
+
+header .logo {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header .navbar ul li a {
+    color: white;
+}
+
+header:hover {
+    background-color: white;
+
+}
+
+header:hover .logo {
+    color: black;
+}
+
+.free-trial {
+    background-color: #DD0735;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: var(--hex_font_normal);
+    white-space: nowrap;
+    margin: 0;
+    padding: 10px 26px;
+    color: #ffffff;
+    border-radius: 3px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 4000;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.sub-bar {
+    width: 100%;
+}
+
+.icon path {
+    fill: #ffffff;
+}
+
+.close-icon {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+
+.menu-button {
+
+    display: none;
+}
+
+.button-login-link {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-login-link a {
+    text-align: center;
+}
+
+.login {
+    text-align: center;
+    padding: 20px;
+}
+
+.login a {
+    color: #020A19;
+    font-size: 18px;
+    text-decoration: none;
+}
+@media (max-width: 1280px) {
+    .hideOnSmallscreen {
+        display: none !important
+    }
+   
+
+    header:hover {
+        background-color: black;
+    }
+
+    header:hover .logo {
+        color: white;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .sidebar {
+        width: 100%;
+    }
+    .over-lay{ 
+        width: 0 !important
+    }
+}
+.over-lay{
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background: #9191b1;
+    transition: right 0.5s ease;
+    z-index: 2500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .5;
+}
