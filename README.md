@@ -28,5 +28,5 @@ Run Project
 
 Challenges
 
-* The design of the image slider was the difficult task i had to complete when web creating this web page.Sinceit was 
-  difficult,I was determined to overcome it,and i was successful in doing so by
+* The design of the image slider was the difficult task i had to complete when web creating this web page.Since it was 
+  more challenging,I was determined to overcome it,and i was successful in doing so by using the owl carousel library within angular.
