@@ -8,15 +8,12 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class MainSectionAComponent implements OnInit,OnDestroy{
 emailFormControl = new FormControl('',[Validators.required,
-Validators.email ])
+Validators.email])
 ngOnInit(): void {
   
 }
 buttonClick(){
   this.emailFormControl.markAllAsTouched();
-  console.log(
-    this.emailFormControl.value
-  )
 }
 ngOnDestroy(): void {
   
