@@ -24,8 +24,6 @@
         position: relative;
         z-index: 1;
         cursor: pointer;
-
-
 }
 .content-list ul li{
     transition: background-color .5s ease;
@@ -80,7 +78,7 @@
     }
     span{
         color: white;
-        transition: .3s;
+        transition: .6s ease;
         rotate: (270deg);
     }
 }
@@ -145,6 +143,8 @@
 .acc-header span{
     font-size: 22px;
     color: #020A1980;
+    max-width: 10px;
+    max-height: 10px;
 
 }
  input[type ="radio"]{
@@ -247,6 +247,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        align-items: center;
 }
 .animation-div-img {
     max-width: 500px;
